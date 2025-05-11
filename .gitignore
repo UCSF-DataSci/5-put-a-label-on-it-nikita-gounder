@@ -5,6 +5,6 @@ data/
 demo*
 refs/
 results/
-part1_introduction.md/
-part2_feature_engineering.md/
-part3_data_preparation.md/
+part1_introduction.md
+part2_feature_engineering.md
+part3_data_preparation.md
