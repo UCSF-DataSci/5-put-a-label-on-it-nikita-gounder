@@ -13,7 +13,7 @@ In this section, provide your interpretation of the Logistic Regression model's 
 - How much did the class imbalance affect the results?
 - What does the confusion matrix tell you about the model's predictions?
 
-*In the Logistic Regression model on imblanaced data, accuracy was the best metric at 0.9168 while recall was the worst at 0.3007.The high accuracy is because the class imbalance  *
+*In the Logistic Regression model on imblanaced data, accuracy was the best metric at 0.9168 while recall was the worst at 0.3007.The high accuracy is exaggerated because the class imbalance and low recall means the model couldn't identify a lot of true positive cases. The confusion matrix shows the model predicted the negative class pretty good but missed true positive cases. This means the model was biased because of the imbalanced data. *
 
 ## Part 2: Tree-Based Models with Time Series Features
 
@@ -25,7 +25,7 @@ In this section, compare the performance of the Random Forest and XGBoost models
 - Why might one model outperform the other on this dataset?
 - How did the addition of time-series features (rolling mean and standard deviation) affect model performance?
 
-*Your analysis here...*
+*According to the AUC score, the XGBoost model did better at 0.9965. In xgboost, gradient boosting probably allows for better fit than random forest. The addition of time-series features like rolling mean and rolling standard deviations for heart rate helped the models have better fit.*
 
 ## Part 3: Logistic Regression with Balanced Data
 
@@ -38,7 +38,7 @@ In this section, analyze the improvements gained by addressing class imbalance:
 - Why might some metrics improve more than others?
 - What does this tell you about the importance of addressing class imbalance?
 
-*Your analysis here...*
+*In the Logistic Regression model on balanaced data, recall was the best metric at 0.8392 while precision was the worst at 0.3200.Recall went from the worst to best metric comparing to the previous unbalanced model. There is now better prediciton of posiitve classes. The confusion matrix is better with more true positive cases. Addressing class imbalance is important to have more accurate metrics that are not biased towards classes. *
 
 ## Overall Conclusions
 
@@ -48,4 +48,4 @@ Summarize your key findings from all three parts of the assignment:
 - Which techniques provided the most significant improvements?
 - What would you recommend for future modeling of this dataset?
 
-*Your conclusions here...*
+*Overall, the most important features for mdoel performance is addressing class imbalance and making sure the features are formatted correctly (time-series). Balancing the classes showed the most improvement. In future modeling of this datasets, I reccomend class-balancing techniques (SMOTE), to personalize features to the data, and choose the best model for the data (randomforest v logistic v xgboost).*
