@@ -13,7 +13,7 @@ In this section, provide your interpretation of the Logistic Regression model's 
 - How much did the class imbalance affect the results?
 - What does the confusion matrix tell you about the model's predictions?
 
-*Your analysis here...*
+*In the Logistic Regression model on imblanaced data, accuracy was the best metric at 0.9168 while recall was the worst at 0.3007.The high accuracy is because the class imbalance  *
 
 ## Part 2: Tree-Based Models with Time Series Features
 
